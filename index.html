@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <title>index.html</title>
+</head>
+<body>
+	<h1>index.html</h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wistech - Solusi IT & Infrastruktur Digital Andal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        navyBlue: '#1E3A8A',
+                        electricBlue: '#2563EB',
+                        cyanAccent: '#06B6D4',
+                        lightBg: '#F8FAFC',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-lightBg text-slate-800 font-sans antialiased selection:bg-electricBlue selection:text-white">
+
+    <!-- 1. Sticky Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="https://wistech.my.id" class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-xl bg-navyBlue flex items-center justify-center text-white font-extrabold text-xl shadow-md shadow-navyBlue/20">
+                    W
+                </div>
+                <span class="text-2xl font-extrabold text-primary tracking-tight">Wis<span class="text-electricBlue">tech</span></span>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#layanan" class="hover:text-electricBlue transition-colors">Layanan</a>
+                <a href="#portofolio" class="hover:text-electricBlue transition-colors">Portofolio</a>
+                <a href="#harga" class="hover:text-electricBlue transition-colors">Paket Harga</a>
+                <a href="#tentang" class="hover:text-electricBlue transition-colors">Tentang Kami</a>
+                <a href="#faq" class="hover:text-electricBlue transition-colors">FAQ</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="https://wa.me/6281234567890?text=Halo%20Wistech,%20saya%20tertarik%20dengan%20layanan%20IT%20Solution%20Anda." target="_blank" class="bg-electricBlue hover:bg-blue-700 text-white font-semibold px-6 py-2.5 rounded-xl shadow-lg shadow-electricBlue/25 transition-all duration-300 flex items-center gap-2">
+                    <i class="fa-solid fa-headset"><span>Konsultasi</span></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-700 focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#layanan" class="block py-2 text-slate-700 font-medium hover:text-electricBlue">Layanan</a>
+            <a href="#portofolio" class="block py-2 text-slate-700 font-medium hover:text-electricBlue">Portofolio</a>
+            <a href="#harga" class="block py-2 text-slate-700 font-medium hover:text-electricBlue">Paket Harga</a>
+            <a href="#tentang" class="block py-2 text-slate-700 font-medium hover:text-electricBlue">Tentang Kami</a>
+            <a href="#faq" class="block py-2 text-slate-700 font-medium hover:text-electricBlue">FAQ</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Wistech,%20saya%20tertarik%20dengan%20layanan%20IT%20Solution%20Anda." target="_blank" class="w-full bg-electricBlue text-white font-semibold py-3 rounded-xl shadow-md text-center block">
+                    Konsultasi Sekarang
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+        <!-- 2. Hero Section -->
+        <section class="pt-32 pb-20 md:pt-44 md:pb-32 bg-gradient-to-b from-white via-slate-50 to-slate-100 border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-electricBlue text-xs md:text-sm font-semibold">
+                            <i class="fa-solid fa-shield-halved"></i> Partner IT Terpercaya untuk Bisnis & Korporat
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-primary tracking-tight leading-tight">
+                            Solusi IT & Infrastruktur Digital <span class="text-electricBlue">Andal</span> untuk Bisnis Anda
+                        </h1>
+                        <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0">
+                            Wistech menghadirkan solusi teknologi terpadu mulai dari infrastruktur jaringan, pengembangan aplikasi kustom, pemeliharaan sistem, hingga keamanan siber profesional.
+                        </p>
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                            <a href="https://wa.me/6281234567890?text=Halo%20Wistech,%20saya%20ingin%20konsultasi%20solusi%20IT." target="_blank" class="w-full sm:w-auto bg-electricBlue hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-electricBlue/25 transition-all duration-300 flex items-center justify-center gap-3 text-base">
+                                <i class="fa-brands fa-whatsapp text-xl"></i> Hubungi Kami via WhatsApp
+                            </a>
+                            <a href="#layanan" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 font-bold px-8 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 text-base">
+                                Lihat Layanan <i class="fa-solid fa-arrow-down text-sm"></i>
+                            </a>
+                        </div>
+                        <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-200 max-w-lg mx-auto lg:mx-0">
+                            <div>
+                                <p class="text-2xl font-extrabold text-primary">100%</p>
+                                <p class="text-xs text-slate-500">Respon Cepat</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-extrabold text-primary">24/7</p>
+                                <p class="text-xs text-slate-500">Dukungan Teknis</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-extrabold text-primary">Bergaransi</p>
+                                <p class="text-xs text-slate-500">Kualitas Terjamin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hero Visual / Illustration Card -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md bg-white p-6 rounded-3xl shadow-2xl border border-slate-200 space-y-4">
+                            <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                                    <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                                </div>
+                                <span class="text-xs font-mono text-slate-400">wistech-system.core</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-electricBlue flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800 text-sm">Infrastruktur & Jaringan</h4>
+                                        <p class="text-xs text-slate-500">Stabil, Cepat, & Terproteksi</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-code"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800 text-sm">Web & App Development</h4>
+                                        <p class="text-xs text-slate-500">Custom sesuai kebutuhan bisnis</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-shield-cat"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800 text-sm">Cybersecurity & Backup</h4>
+                                        <p class="text-xs text-slate-500">Aman dari ancaman siber</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <div class="w-full bg-navyBlue text-white text-center py-3 rounded-xl text-xs font-semibold tracking-wider uppercase">
+                                    Wistech IT Solutions Active
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Core Services (Bento Grid) -->
+        <section id="layanan" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-xs uppercase font-extrabold tracking-widest text-electricBlue">Layanan Unggulan</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-primary">Solusi Komprehensif untuk Kebutuhan IT Anda</h3>
+                    <p class="text-slate-600">Kami menyediakan berbagai layanan teknis profesional yang dirancang khusus untuk meningkatkan efisiensi operasional dan keamanan bisnis Anda.</p>
+                </div>
+
+                <!-- Bento Grid Container -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-slate-50 hover:bg-blue-50/50 border border-slate-200/80 p-8 rounded-3xl transition-all duration-300 hover:shadow-xl hover:border-electricBlue/30 flex flex-col justify-between group">
+                        <div class="space-y-4">
+                            <div class="w-14 h-14 rounded-2xl bg-white shadow-md border border-slate-100 text-electricBlue flex items-center justify-center text-2xl group-hover:bg-electricBlue group-hover:text-white transition-colors duration-300">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary">IT Infrastructure & Networking</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Pemasangan dan konfigurasi jaringan LAN/Wi-Fi kantor, manajemen router, perapian kabel data (*cabling*), serta pemeliharaan server handal.
+                            </p>
+                        </div>
+                        <div class="pt-6">
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20konsultasi%20tentang%20IT%20Infrastructure%20%26%20Networking." target="_blank" class="inline-flex items-center gap-2 text-electricBlue font-semibold text-sm hover:underline">
+                                Konsultasi Layanan <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-slate-50 hover:bg-blue-50/50 border border-slate-200/80 p-8 rounded-3xl transition-all duration-300 hover:shadow-xl hover:border-electricBlue/30 flex flex-col justify-between group">
+                        <div class="space-y-4">
+                            <div class="w-14 h-14 rounded-2xl bg-white shadow-md border border-slate-100 text-electricBlue flex items-center justify-center text-2xl group-hover:bg-electricBlue group-hover:text-white transition-colors duration-300">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary">Software & Web Development</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Pembuatan website profesional, aplikasi kasir (POS), sistem inventaris, dan aplikasi kustom berbasis web/mobile sesuai alur kerja bisnis Anda.
+                            </p>
+                        </div>
+                        <div class="pt-6">
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20konsultasi%20tentang%20Software%20%26%20Web%20Development." target="_blank" class="inline-flex items-center gap-2 text-electricBlue font-semibold text-sm hover:underline">
+                                Konsultasi Layanan <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-slate-50 hover:bg-blue-50/50 border border-slate-200/80 p-8 rounded-3xl transition-all duration-300 hover:shadow-xl hover:border-electricBlue/30 flex flex-col justify-between group">
+                        <div class="space-y-4">
+                            <div class="w-14 h-14 rounded-2xl bg-white shadow-md border border-slate-100 text-electricBlue flex items-center justify-center text-2xl group-hover:bg-electricBlue group-hover:text-white transition-colors duration-300">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary">IT Support & Maintenance</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Perawatan berkala perangkat keras (PC/laptop), perbaikan sistem operasional, *troubleshooting* jaringan, serta dukungan teknis on-site/remote.
+                            </p>
+                        </div>
+                        <div class="pt-6">
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20konsultasi%20tentang%20IT%20Support%20%26%20Maintenance." target="_blank" class="inline-flex items-center gap-2 text-electricBlue font-semibold text-sm hover:underline">
+                                Konsultasi Layanan <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 (Span Full on Large Grid or Centered) -->
+                    <div class="md:col-span-2 lg:col-span-3 bg-gradient-to-r from-primary to-navyBlue text-white p-8 sm:p-10 rounded-3xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="space-y-3 max-w-2xl">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-cyanAccent text-xs font-semibold">
+                                <i class="fa-solid fa-shield-halved"></i> Keamanan Tingkat Lanjut
+                            </div>
+                            <h4 class="text-2xl font-extrabold">Cybersecurity & Data Backup Solution</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Lindungi aset digital perusahaan dari ancaman siber, serangan *ransomware*, dan kehilangan data dengan sistem enkripsi serta *automated backup* berkala yang aman.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Cybersecurity%20%26%20Data%20Backup." target="_blank" class="bg-cyanAccent hover:bg-cyan-500 text-primary font-bold px-6 py-3.5 rounded-xl shadow-lg transition-all duration-300 whitespace-nowrap block text-center">
+                                Amankan Sistem Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Pricing / Maintenance Plans -->
+        <section id="harga" class="py-20 bg-slate-100 border-t border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-xs uppercase font-extrabold tracking-widest text-electricBlue">Paket & Layanan</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-primary">Transparan & Fleksibel untuk Setiap Skala Bisnis</h3>
+                    <p class="text-slate-600">Pilih paket pemeliharaan rutin atau sampaikan kebutuhan khusus untuk proyek digital Anda.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                    <!-- Plan 1 -->
+                    <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-md flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <div>
+                                <span class="text-xs font-bold text-electricBlue uppercase tracking-wider">UMKM / Startup</span>
+                                <h4 class="text-2xl font-extrabold text-primary mt-1">Paket Basic</h4>
+                                <p class="text-slate-500 text-sm mt-2">Cocok untuk toko, kantor kecil, atau UMKM yang membutuhkan perawatan IT dasar.</p>
+                            </div>
+                            <div class="border-t border-slate-100 pt-6 space-y-3">
+                                <div class="flex items-center gap-3 text-sm text-slate-700">
+                                    <i class="fa-solid fa-check text-green-500"></i> Maintenance PC & Laptop Berkala
+                                </div>
+                                <div class="flex items-center gap-3 text-sm text-slate-700">
+                                    <i class="fa-solid fa-check text-green-500"></i> Remote Support & Troubleshooting
+                                </div>
+                                <div class="flex items-center gap-3 text-sm text-slate-700">
+                                    <i class="fa-solid fa-check text-green-500"></i> Backup Data Bulanan
+                                </div>
+                                <div class="flex items-center gap-3 text-sm text-slate-400">
+                                    <i class="fa-solid fa-xmark text-slate-300"></i> On-site Priority 24/7
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-8">
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Paket%20Basic%20UMKM." target="_blank" class="w-full bg-slate-100 hover:bg-slate-200 text-primary font-bold py-3.5 rounded-xl block text-center transition-colors">
+                                Pilih Paket Basic
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Plan 2 (Featured) -->
+                    <div class="bg-primary text-white border-2 border-electricBlue rounded-3xl p-8 shadow-2xl flex flex-col justify-between relative transform lg:-translate-y-2">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-electricBlue text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+                            Paling Populer
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <span class="text-xs font-bold text-cyanAccent uppercase tracking-wider">Korporat / Perusahaan</span>
+                                <h4 class="text-2xl font-extrabold text-white mt-1">Paket Corporate (Pro)</h4>
+                                <p class="text-slate-300 text-sm mt-2">Solusi penuh untuk pengelolaan jaringan, server, dan pengamanan data perusahaan.</p>
+                            </div>
+                            <div class="border-t border-slate-800 pt-6 space-y-3">
+                                <div class="flex items-center gap-3 text-sm text-slate-200">
+                                    <i class="fa-solid fa-check text-cyanAccent"></i> Full IT Infrastructure Management
+                                </div>
+                                <div class="flex items-center gap-3 text-sm text-slate-200">
+                                    <i class="fa-solid fa-check text-cyanAccent"></i> Prioritas Emergency Response (< 2 Jam)
+                                </div>
+                                <div class="flex items-center gap-3 text-sm text-slate-200">
+                                    <i class="fa-solid fa-check text-cyanAccent"></i> Cybersecurity & Firewall Monitoring
+                                </div>
+                                <div class="flex items-center gap-3 text-sm text-slate-200">
+                                    <i class="fa-solid fa-check text-cyanAccent"></i> Kunjungan On-Site Rutin Bulanan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-8">
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Paket%20Corporate%20Pro." target="_blank" class="w-full bg-electricBlue hover:bg-blue-600 text-white font-bold py-3.5 rounded-xl block text-center shadow-lg shadow-electricBlue/40 transition-colors">
+                                Pilih Paket Corporate
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Plan 3 -->
+                    <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-md flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <div>
+                                <span class="text-xs font-bold text-electricBlue uppercase tracking-wider">Custom Solution</span>
+                                <h4 class="text-2xl font-extrabold text-primary mt-1">Custom Project</h4>
+                                <p class="text-slate-500 text-sm mt-2">Pembuatan website, aplikasi kasir, sistem inventaris, atau instalasi jaringan skala khusus.</p>
+                            </div>
+                            <div class="border-t border-slate-100 pt-6 space-y-3">
+                                <div class="flex items-center gap-3 text-sm text-slate-700">
+                                    <i class="fa-solid fa-check text-green-500"></i> Analisis Kebutuhan Sistem Mendalam
+                                </div>
+                                <div class="flex items-center gap-3 text-sm text-slate-700">
+                                    <i class="fa-solid fa-check text-green-500"></i> Desain UI/UX & Koding Kustom
+                                </div>
+                                <div class="flex items-center gap-3 text-sm text-slate-700">
+                                    <i class="fa-solid fa-check text-green-500"></i> Dokumentasi & Pelatihan Pengguna
+                                </div>
+                                <div class="flex items-center gap-3 text-sm text-slate-700">
+                                    <i class="fa-solid fa-check text-green-500"></i> Garansi & Pemeliharaan Pasca-Rilis
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-8">
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20diskusikan%20Custom%20Project%20IT." target="_blank" class="w-full bg-slate-100 hover:bg-slate-200 text-primary font-bold py-3.5 rounded-xl block text-center transition-colors">
+                                Diskusikan Proyek
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Portofolio / Studi Kasus -->
+        <section id="portofolio" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-xs uppercase font-extrabold tracking-widest text-electricBlue">Portofolio & Studi Kasus</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-primary">Bukti Nyata Pengalaman & Keahlian Kami</h3>
+                    <p class="text-slate-600">Beberapa proyek infrastruktur jaringan dan pengembangan sistem digital yang sukses kami selesaikan.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+                        <div class="p-8 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-3 py-1 rounded-full bg-blue-100 text-electricBlue text-xs font-bold">Networking</span>
+                                <span class="text-xs text-slate-400 font-mono">Jabodetabek</span>
+                            </div>
+                            <h4 class="text-2xl font-bold text-primary">Instalasi & Perapian Jaringan Kantor Korporat</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Pemasangan infrastruktur LAN, konfigurasi router enterprise, dan manajemen *cable management* untuk gedung kantor 3 lantai guna menjamin kelancaran komunikasi data internal.
+                            </p>
+                        </div>
+                        <div class="px-8 pb-8 pt-2">
+                            <div class="flex items-center gap-2 text-xs font-semibold text-slate-500">
+                                <i class="fa-solid fa-circle-check text-green-500"></i> Solusi: Zero Downtime & High-Speed Connection
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+                        <div class="p-8 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-3 py-1 rounded-full bg-cyan-100 text-cyan-700 text-xs font-bold">Web App / POS</span>
+                                <span class="text-xs text-slate-400 font-mono">Custom Solution</span>
+                            </div>
+                            <h4 class="text-2xl font-bold text-primary">Pengembangan Sistem Kasir & Inventaris Kustom</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Membangun aplikasi berbasis web interaktif untuk manajemen stok barang, laporan penjualan real-time, dan integrasi struk digital bagi pelaku usaha retail & kuliner.
+                            </p>
+                        </div>
+                        <div class="px-8 pb-8 pt-2">
+                            <div class="flex items-center gap-2 text-xs font-semibold text-slate-500">
+                                <i class="fa-solid fa-circle-check text-green-500"></i> Solusi: Efisiensi Transaksi & Laporan Otomatis
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Kami Section -->
+        <section id="tentang" class="py-20 bg-slate-50 border-t border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-6 space-y-6">
+                        <h2 class="text-xs uppercase font-extrabold tracking-widest text-electricBlue">Tentang Wistech</h2>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-primary">Mitra Teknologi Terdepan untuk Pertumbuhan Bisnis Anda</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Wistech hadir dengan komitmen tinggi untuk menyediakan layanan IT Solution yang profesional, responsif, dan solutif. Kami memahami bahwa kestabilan infrastruktur dan keandalan sistem digital adalah kunci utama kesuksesan operasional bisnis modern di era digital saat ini.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 pt-4">
+                            <div class="border-l-2 border-electricBlue pl-4">
+                                <h5 class="font-bold text-primary text-lg">Respon Cepat</h5>
+                                <p class="text-xs text-slate-500 mt-1">Penanganan masalah darurat secara sigap dan tepat.</p>
+                            </div>
+                            <div class="border-l-2 border-electricBlue pl-4">
+                                <h5 class="font-bold text-primary text-lg">Solusi Kustom</h5>
+                                <p class="text-xs text-slate-500 mt-1">Layanan yang disesuaikan dengan skala dan anggaran bisnis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 bg-white p-8 rounded-3xl border border-slate-200 shadow-xl space-y-6">
+                        <h4 class="text-xl font-bold text-primary">Cakupan Area Layanan</h4>
+                        <p class="text-slate-600 text-sm">
+                            Kami melayani konsultasi jarak jauh (*remote support*) untuk seluruh wilayah Indonesia, serta layanan kunjungan langsung (*on-site*) khusus untuk wilayah **Jabodetabek** dan sekitarnya.
+                        </p>
+                        <div class="p-4 rounded-2xl bg-blue-50 border border-blue-100 flex items-center gap-4">
+                            <div class="text-electricBlue text-2xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-800 text-sm">Operasional Utama</h5>
+                                <p class="text-xs text-slate-600">Jakarta & Greater Jakarta Area (Jabodetabek)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. FAQ (Frequently Asked Questions) -->
+        <section id="faq" class="py-20 bg-white border-t border-slate-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 space-y-4">
+                    <h2 class="text-xs uppercase font-extrabold tracking-widest text-electricBlue">FAQ</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-primary">Pertanyaan yang Sering Diajukan</h3>
+                    <p class="text-slate-600">Temukan jawaban cepat seputar layanan, SLA, dan prosedur kerja sama kami.</p>
+                </div>
+
+                <!-- Accordion List -->
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50">
+                        <button class="faq-btn w-full px-6 py-5 text-left font-bold text-primary flex items-center justify-between gap-4 focus:outline-none">
+                            <span>Bagaimana prosedur jika terjadi gangguan jaringan mendadak?</span>
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300 text-electricBlue"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-200/60 pt-4">
+                            Anda dapat langsung menghubungi tim kami melalui WhatsApp darurat. Kami akan melakukan penanganan awal secara *remote* dalam hitungan menit, atau menjadwalkan kunjungan *on-site* sesuai tingkat urgensi gangguan.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50">
+                        <button class="faq-btn w-full px-6 py-5 text-left font-bold text-primary flex items-center justify-between gap-4 focus:outline-none">
+                            <span>Berapa SLA (Service Level Agreement) response time dari Wistech?</span>
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300 text-electricBlue"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-200/60 pt-4">
+                            Untuk klien dengan paket Corporate (Pro), kami memberikan jaminan *response time* darurat di bawah 2 jam untuk wilayah Jabodetabek dan penanganan remote instan 24/7.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50">
+                        <button class="faq-btn w-full px-6 py-5 text-left font-bold text-primary flex items-center justify-between gap-4 focus:outline-none">
+                            <span>Apakah Wistech melayani kunjungan ke luar area Jabodetabek?</span>
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300 text-electricBlue"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-200/60 pt-4">
+                            Untuk layanan *on-site* fisik difokuskan di area Jabodetabek. Namun, untuk proyek pengembangan software, konsultasi arsitektur IT, dan *remote monitoring*, kami melayani klien dari seluruh wilayah di Indonesia.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50">
+                        <button class="faq-btn w-full px-6 py-5 text-left font-bold text-primary flex items-center justify-between gap-4 focus:outline-none">
+                            <span>Bagaimana cara memulai kerja sama pembuatan website atau sistem kustom?</span>
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300 text-electricBlue"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-200/60 pt-4">
+                            Anda cukup mengklik tombol WhatsApp di website ini untuk berkonsultasi gratis. Kami akan mendengarkan kebutuhan Anda, merancang skema solusi, dan memberikan estimasi waktu serta penawaran transparan.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer & Copyright -->
+    <footer class="bg-primary text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-electricBlue flex items-center justify-center text-white font-extrabold text-lg">
+                            W
+                        </div>
+                        <span class="text-xl font-extrabold text-white tracking-tight">Wis<span class="text-electricBlue">tech</span></span>
+                    </div>
+                    <p class="text-sm max-w-sm text-slate-400 leading-relaxed">
+                        Solusi IT, infrastruktur jaringan, dan pengembangan sistem digital profesional untuk mendukung kemajuan bisnis Anda.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Navigasi</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#layanan" class="hover:text-white transition-colors">Layanan</a></li>
+                        <li><a href="#portofolio" class="hover:text-white transition-colors">Portofolio</a></li>
+                        <li><a href="#harga" class="hover:text-white transition-colors">Paket Harga</a></li>
+                        <li><a href="#tentang" class="hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Kontak & Domain</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://wistech.my.id" class="text-cyanAccent hover:underline">https://wistech.my.id</a></li>
+                        <li>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank" class="text-white hover:underline">+62 812-3456-7890</a></li>
+                        <li>Area: Jabodetabek & Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>Copyright © 2026 Wistech - <a href="https://wistech.my.id" class="hover:underline text-slate-400">https://wistech.my.id</a>. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#faq" class="hover:text-slate-400">Kebijakan Privasi</a>
+                    <a href="#faq" class="hover:text-slate-400">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 7. Floating WhatsApp Widget -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Wistech,%20saya%20butuh%20bantuan%20IT%20Solution." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl transition-all duration-300 hover:scale-110 focus:outline-none" aria-label="WhatsApp Konsultasi">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript for Mobile Menu & FAQ Accordion -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Accordion
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('fa-chevron-down, i');
+                
+                // Toggle current
+                content.classList.toggle('hidden');
+                if(icon) {
+                    icon.classList.toggle('rotate-180');
+                }
+
+                // Optional: close other open accordions
+                faqBtns.forEach(otherBtn => {
+                    if (otherBtn !== btn) {
+                        otherBtn.nextElementSibling.classList.add('hidden');
+                        const otherIcon = otherBtn.querySelector('i');
+                        if(otherIcon) otherIcon.classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
